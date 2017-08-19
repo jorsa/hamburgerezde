@@ -17,7 +17,7 @@ body{
 }
 
 #logo-img{
-  margin: 3px 0px 0px 0px;
+  margin: 3px 20px 0px 0px;
   background: url("../img/hamburgerezde_logo.png") no-repeat;
   width: 130px;
   height: 110px;
@@ -27,9 +27,56 @@ button:focus{
   outline:0;
 }
 
+.navbar-collapse{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.nav-item{
+  width: 75px;
+  text-align: center;
+  margin: 0px;
+}
+
+/*Make the mobile menu in a row*/
+.navbar-nav{
+  flex-direction: row;
+}
+
+@media(max-width: 560px){
+   .navbar-nav{
+    flex-direction: column;
+  }
+  .nav-item{
+    width: 100%;
+  }
+}
+
+
+/*Icons*/
+svg {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 7px;
+  width:32px;
+  height:32px;
+}
+
+/*Icons*/
+.si-glyph-fill {
+  fill: rgb(255,210,0);
+}
+
+.nav-link:hover .si-glyph-fill{
+  fill: rgb(0,0,0);
+}
 
 .navbar-toggler{
   background: rgb(255,210,0);
+}
+
+.navbar-light .navbar-nav .nav-link{
+  padding: 10px;
 }
 
 /* Menu link item color*/
@@ -38,10 +85,9 @@ button:focus{
 }
 
 /* Menu active item color*/
-.navbar-light .navbar-nav .active>.nav-link{
+.navbar-light .navbar-nav .active>.nav-link .menu-text{
   color: rgb(255,210,0);
   text-decoration: underline;
-;
 }
 
 /* Menu disbled link item color*/
@@ -56,6 +102,18 @@ button:focus{
   border-color: rgb(255,210,0);
 }
 
+.navbar-light .navbar-nav .active>.nav-link:hover .menu-text{
+  color: rgb(0,0,0);
+  text-decoration: underline;
+}
+
+/* Menu button color*/
+.navbar-light .navbar-nav .nav-link:hover{
+  color: rgb(0,0,0);
+  background-color: rgb(255,210,0);
+  border-color: rgb(255,210,0);
+}
+
 .btn-outline-success:hover, .btn-outline-success:active {
     color: rgb(0,0,0);
     background-color: rgb(255,210,0);
@@ -64,4 +122,19 @@ button:focus{
 
 .btn-outline-success:focus{
     box-shadow: 0 0 0 3px rgba(255,210,0,.5);
+}
+
+.example-text{
+  margin: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.example-img{
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+ul{
+  display: inline;
 }
