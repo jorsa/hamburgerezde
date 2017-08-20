@@ -50,6 +50,19 @@ button:focus{
   .nav-item{
     width: 100%;
   }
+
+  .nav-link{
+    display: flex;
+  }
+
+  .menu-text{
+    padding-left: 20px;
+    font-size: 20px;
+  }
+}
+
+.form-control{
+  width: 70%;
 }
 
 
