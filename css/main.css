@@ -160,3 +160,52 @@ svg {
 ul{
   display: inline;
 }
+
+/* Jumbotron image */
+.jumbotron{
+  padding: 0px;
+}
+
+
+/******** Large devices only ********/
+@media (min-width: 1200px){
+  .jumbotron-img img{
+    background: url("../img/hambi_1200.jpg") no-repeat;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+  }
+}
+
+/******** Medium devices only ********/
+@media (min-width: 992px) and (max-width: 1199px){
+  .jumbotron-img img{
+    background: url("../img/hambi_1200.jpg") no-repeat;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+  }
+}
+
+/******** Small devices only ********/
+@media (min-width: 768px) and (max-width: 991px){
+  .jumbotron-img img{
+    background: url("../img/hambi_768.jpg") no-repeat;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+  }
+}
+
+/******** Extra small devices only ********/
+@media (max-width: 767px){
+  .jumbotron-img img{
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+  }
+}
