@@ -147,14 +147,9 @@ svg {
 }
 
 .example-text{
-  margin: 20px;
+  margin: 20px 0px 30px 0px;
   text-align: justify;
   text-justify: inter-word;
-}
-
-.example-img{
-  width: 100%;
-  margin-bottom: 30px;
 }
 
 ul{
@@ -164,6 +159,46 @@ ul{
 /* Jumbotron image */
 .jumbotron{
   padding: 0px;
+  margin-top: 25px;
+}
+
+/*Tiles*/
+#menu-tile, #special-tile, #map-tile{
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  box-shadow: 0 0 30px #3F0C1F;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+
+/*Tiles hover*/
+#menu-tile:hover, #special-tile:hover, #map-tile:hover{
+  box-shadow: 0 0 50px rgb(125,80,0);
+  border: 2px solid rgb(125,80,0);
+}
+
+#menu-tile{
+  background: url("../img/hambi_menu.jpg") no-repeat;
+  background-position: center;
+}
+
+#special-tile{
+  background: url("../img/hambi_special.jpg") no-repeat;
+  background-position: center;
+}
+
+#menu-tile span, #special-tile span, #map-tile span{
+  position: absolute;
+  bottom: 0;
+  right 0;
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  background-color: rgb(0,0,0);
+  color: rgb(255,210,0);
+  opacity: 0.8;
 }
 
 
