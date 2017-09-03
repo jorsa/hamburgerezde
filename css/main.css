@@ -316,3 +316,41 @@ footer hr{
     list-style: none;
   }
 }
+
+/* MENU CATEGORies PAGE STYLE*/
+
+.category-tile{
+  position: relative;
+  border: 2px solid #3F0C1F;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  box-shadow: 0 0 30px #3F0C1F;
+  border: 2px solid #3F0C1F;
+}
+
+.category-tile:hover{
+  box-shadow: 0 0 50px rgb(125,80,0);
+  border: 2px solid rgb(125,80,0);
+}
+
+.category-tile span{
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.10em;
+  background-color: rgb(0,0,0);
+  color: rgb(255,210,0);
+  opacity: .8;
+}
+
+#menu-categories-title h2{
+  padding: 30px 0px 0px 0px;
+}
+
+.categories-title-description{
+  padding: 25px 0px 40px 0px;
+  font-size: 1.10em;
+}
